@@ -23,9 +23,10 @@ print("Opening the file...")
 target = open(filename, 'w') # whoops! this resulted in a NameError...this option is actually a string and needs to be enclosed in quotes...
 print("Huzzah! Zee file, it is open ~.~")
 
-print("Truncating the file. Goodbye!")
-target.truncate() # empty the contents of the file defined as target
-print("Truncation complete...")
+# we don't really need the truncate method given that we're opening the file in write-mode
+# print("Truncating the file. Goodbye!")
+# target.truncate() # empty the contents of the file defined as target
+# print("Truncation complete...")
 
 print("Now I'm going to ask you for three lines...")
 
@@ -35,12 +36,15 @@ line3 = input("line 3: ") # ask the user for even more input
 
 print(f"Thanks! Now I'm going to write these to the {filename} file.")
 
-target.write(line1) # write the contents of line1 to the file we've assigned to the variable target
-target.write("\n") # write a new linw to the file
-target.write(line2) # write the contents of line2 to the file
-target.write("\n") # write a new line to the file
-target.write(line3) # write the contents of line3 to the file
-target.write("\n") # write a new line to the file
+# target.write(line1) # write the contents of line1 to the file we've assigned to the variable target
+# target.write("\n") # write a new linw to the file
+# target.write(line2) # write the contents of line2 to the file
+# target.write("\n") # write a new line to the file
+# target.write(line3) # write the contents of line3 to the file
+# target.write("\n") # write a new line to the file
+
+# study drill 3 -- remove the repitive use (6 lines) of target.write above and re-write this into a single command
+target.write(f"{line1}\n{line2}\n{line3}\n")
 
 # we could probably print this out and show the user with another print.
 print("Ah yes, a fine piece of work indeed Bashō-san")
