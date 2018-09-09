@@ -44,7 +44,9 @@ target.write("\n")
 
 # we could probably print this out and show the user with another print.
 print("Ah yes, a fine piece of work indeed Bashō-san")
-print(read(filename)) # did this do what we wanted it to?...maybe if it didnt genera te syntax error, hah
+# print(read(filename)) # did this do what we wanted it to?...maybe if it didnt genera te syntax error, hah
+# no, this didnt work because it was formatted incorrectly
+print(filename.read()) # lets try this instead
 
 print("And finally, we close this sweet file.")
 target.close()
