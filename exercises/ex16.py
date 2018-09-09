@@ -19,7 +19,8 @@ print("But if you do want that, go ahead and hit that there RETURN key...")
 input("Choose your adventure (hit RETURN to proceed or ^C to cancel) > ")
 
 print("Opening the file...")
-target = open(filename, w) # call the open method with the paramters filename (from prompt above) and w such that the file is not opened in read-only mode
+# call the open method with the paramters filename (from prompt above) and w such that the file is not opened in read-only mode
+target = open(filename, 'w') # whoops! this resulted in a NameError...this option is actually a string and needs to be enclosed in quotes...
 print("Huzzah! Zee file, it is open ~.~")
 
 print("Truncating the file. Goodbye!")
