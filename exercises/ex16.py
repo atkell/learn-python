@@ -43,7 +43,7 @@ print(f"Thanks! Now I'm going to write these to the {filename} file.")
 # target.write(line3) # write the contents of line3 to the file
 # target.write("\n") # write a new line to the file
 
-# study drill 3 -- remove the repitive use (6 lines) of target.write above and re-write this into a single command
+# study drill 3 -- remove the repitive use (6 lines) of target.write above and re-write this into a single command w/ stings, formats and escapes
 target.write(f"{line1}\n{line2}\n{line3}\n")
 
 # we could probably print this out and show the user with another print.
