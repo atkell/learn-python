@@ -33,7 +33,7 @@ line1 = input("line 1: ")
 line2 = input("line 2: ")
 line3 = input("line 3: ")
 
-print("Thanks! Now I'm going to write these to a file.")
+print(f"Thanks! Now I'm going to write these to the {target} file.")
 
 target.write(line1)
 target.write("\n")
@@ -44,9 +44,14 @@ target.write("\n")
 
 # we could probably print this out and show the user with another print.
 print("Ah yes, a fine piece of work indeed Bashō-san")
-# print(read(filename)) # did this do what we wanted it to?...maybe if it didnt genera te syntax error, hah
-# no, this didnt work because it was formatted incorrectly
-print(filename.read()) # lets try this instead
+
+# print(read(filename)) # did this do what we wanted it to?...maybe if it didnt genera te syntax error, hah. no, this didnt work because it was formatted incorrectly
+
+# print(filename.read()) # lets try this instead...nope, this gave me an AttributeError: 'str' object has no attribute 'read'
+
+# print(target.read()) # third times a charm? nope. this resulted in the error: io.UnsupportedOperation: not readable
+read_target = read(filename)
+print(read_target.read()) # fourth time and we'll get it! 
 
 print("And finally, we close this sweet file.")
 target.close()
