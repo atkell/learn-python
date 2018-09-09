@@ -16,7 +16,7 @@ print(f"We're going to erase {filename}...")
 print("If you don't want that, hit CTRL-C (^C)...")
 print("But if you do want that, go ahead and hit that there RETURN key...")
 
-input("Choose your adventure (hit RETURN to proceed or ^C to cancel) > ")
+input("Choose your adventure (hit RETURN to proceed or ^C to cancel) > ") # ask the user to proceed or cancel
 
 print("Opening the file...")
 # call the open method with the paramters filename (from prompt above) and w such that the file is not opened in read-only mode
@@ -24,38 +24,28 @@ target = open(filename, 'w') # whoops! this resulted in a NameError...this optio
 print("Huzzah! Zee file, it is open ~.~")
 
 print("Truncating the file. Goodbye!")
-target.truncate()
+target.truncate() # empty the contents of the file defined as target
 print("Truncation complete...")
 
 print("Now I'm going to ask you for three lines...")
 
-line1 = input("line 1: ")
-line2 = input("line 2: ")
-line3 = input("line 3: ")
+line1 = input("line 1: ") # ask the user for an input
+line2 = input("line 2: ") # ask the user for more input
+line3 = input("line 3: ") # ask the user for even more input
 
 print(f"Thanks! Now I'm going to write these to the {filename} file.")
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+target.write(line1) # write the contents of line1 to the file we've assigned to the variable target
+target.write("\n") # write a new linw to the file
+target.write(line2) # write the contents of line2 to the file
+target.write("\n") # write a new line to the file
+target.write(line3) # write the contents of line3 to the file
+target.write("\n") # write a new line to the file
 
 # we could probably print this out and show the user with another print.
 print("Ah yes, a fine piece of work indeed Bashō-san")
-text_again = open(target)
-print(text_again.read())
-
-# print(read(filename)) # did this do what we wanted it to?...maybe if it didnt genera te syntax error, hah. no, this didnt work because it was formatted incorrectly
-
-# print(filename.read()) # lets try this instead...nope, this gave me an AttributeError: 'str' object has no attribute 'read'
-
-# print(target.read()) # third times a charm? nope. this resulted in the error: io.UnsupportedOperation: not readable
-# read_target = open(filename)
-# print(read_target.read()) # fourth time and we'll get it! 
 
 print("And finally, we close this sweet file.")
-target.close()
+target.close() # close the file
 print("The file, she be closed.")
 
