@@ -9,9 +9,9 @@ script, from_file, to_file = argv # unpack the contents of argv into these varia
 # print(f"Copying from {from_file} to {to_file}") # study drill 1: this script is annoying, try removing superflous lines where possible
 
 # we could do these two on one line, but how?
-in_file = open(from_file)
-indata = in_file.read()
-# indata = open(from_file, 'r')
+# in_file = open(from_file)
+# indata = in_file.read()
+indata = open(from_file).read() # do it one one line aaaaayeaaa baby!
 
 # print(f"The input file is {len(indata)} bytes long") # study drill 1: this script is annoying, try removing superflous lines where possible
 
@@ -25,4 +25,4 @@ out_file.write(indata)
 # print("Alright, all done.")  # study drill 1: this script is annoying, try removing superflous lines where possible
 
 out_file.close()
-in_file.close()
+# in_file.close() # got to comment this one out, no longer needed when we refactored lines 12 and 13 together to create line 14
