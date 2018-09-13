@@ -29,3 +29,7 @@ ninety_nine(homebrews) # use the variable as the argument once again
 ninety_nine(homebrews * 3) # use the variable and multiply it by 3
 # ten
 ninety_nine(99) # just for fun
+# elevent
+print("How many bottles would you like to take down?") # prompt the user to decide how many bottles to take down
+your_choice = int(input("? ")) # we'll have an error if we dont convert the string input to an integer
+ninety_nine(your_choice) # call the ol function for the 11th time but pass in the value assigned to the variable assigned to the input provided by the user
