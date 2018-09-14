@@ -10,6 +10,7 @@ def print_all(f): # create a new function and name it print_all. this function a
 
 def rewind(f): # create a new function and name it rewind. this function accepts a single argument, f
 	f.seek(0) # call the seek function on the argument, f, with the option 0 which will tell python to move from the current line back to line 0 or the beginning / start of the file
+	# so what I wrote here is actually incorrect. seek is not about line numbers but rather bytes. so seek(0) moves the file to the 0 byte (first byte) of the file
 
 def print_a_line(line_count, f): # create a new function and name it line_count. this function accepts two arguments, line_count and f
 	print(line_count, f.readline()) # pass in the arguments of line_count (probably a line number) and then call the function readline() on whatever is assigned to the variable f
