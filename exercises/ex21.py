@@ -46,6 +46,7 @@ print("That becomes: ", what, "Can you do it by hand?")
 # print(f" Is {what2} the same value?")
 print(f" Is {what3} the same value?") # to quote my friend michael, "bingo bango
 
+######
 # could we do this by prompting the user for input instead of hardcoding age, height and weight? I bet we could :D
 input_age = float(input("How old are you?  ")) # we have to enclose our input with the float function for reasons that are complicated but simple. inda like how we had to use int() in a prior exercise. basically, we could get a decimal here.
 input_height = float(input("How tall are you, in inches?  "))
