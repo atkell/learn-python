@@ -1,6 +1,7 @@
 # strings, bytes and character encodings
 # the plot thickents, my friends...mark one for experience
 # to do this right we'll need to download a file from Zed located at https://learnpythonthehardway.org/python3/languages.txt
+# and remember we decode bytes and encode strings (DBES)
 
 # in this exercise we'll explore a few things like....
 #	1. how modern computers store human languages for display and processing nad how Python3 calls this `strings`
@@ -42,7 +43,7 @@ main(languages, encoding, error)
 # once we have bytes, we may store and display text by decideing on another convention for how a number maps to a letter
 # the most popular convention ended up being the American Standard Code for Information Interchange or ASCII – this standard maps a number to a letter, like 90 is Z or in bits (binary) 1011010 
 # so in effect a string is merely a sequence of bytes
-# To write my name, A T Kell (the caps make a difference!), in binary would be [65, 84, 75, 101, 108, 108]
+# To write my name, A T Kell (the caps make a difference!), in binary would be [65, 84, 75, 101, 108, 108] (hint I used ord('A') and char('90') commands to figure this out)
 # most text in early computers was nothing more than this, a sequence of bytes stored in memory
 
 # the trouble here is that ASCII only encodes English and some other languages, but not all of them which means we're SOL if we try and drop some Thai into our English
@@ -53,5 +54,6 @@ main(languages, encoding, error)
 # the solution here is use a clever convetion to enclode most common characters using 8 bits, then escape to into larger numbers when we need to encode more characters
 # so, we have one more convetion here that is nothing more than a compression encoding, making it possible for most common characters to use 8 bits and then escape out into 16 or 32 bits as needed
 
-# we call this convention for encoding text in Python UTF-8 or "Unicode Transforation Format 8 Bits"
-# this allows us to encode a series of bytes, which are sequences of bits
+# we call this convention for encoding text in Python UTF-8 or "Unicode Transforation Format 8 Bits".
+# this allows us to encode a series of bytes, which are sequences of bits which then turn sequenes of switches (1s and 0s) on and off.
+# other conventions (encodings) exist but for now UTF-8 is the current standard
