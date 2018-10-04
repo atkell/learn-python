@@ -27,12 +27,12 @@ _________________________
 
 __________________________________ 
 | OR                 | True?     |
----------------------------------
-| True or False     | True      |
-| True or True      | True     |
-| False or True     | True      |
-| False or False    | False     |
----------------------------------
+----------------------------------
+| True or False     | True       |
+| True or True      | True       |
+| False or True     | True       |
+| False or False    | False      |
+----------------------------------
 
 __________________________________ 
 | AND                 | True?     |
