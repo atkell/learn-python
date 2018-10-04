@@ -1,6 +1,6 @@
 # strings and text, yo
 # a string is usually a bit of text you want to display to someone or "export" out of the program you are writing
-# python knows that you wan something to be a string when you put either " (double quote) or ' (single quote) around the text
+# python knows that you wan something to be a string when you put either " (double-quote) or ' (single quote) around the text
 # strings may contain any number of variables in your script
 # a variable is any line oc code where you set a name = (equal) to a value (assignment)
 # python also has another kind of formatting using the .format() syntax, but we'll cover that more later
