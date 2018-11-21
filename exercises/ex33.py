@@ -41,12 +41,42 @@ def loop(a,b):
         print("The contents of the Numbers list are now: ", numbers)
         print(f"At the bottom i is {i}\n")
 
-#loop(6,2)
+# loop(6,2)
 
 # bonus round: can we re-write this such that we prompt the user to input a and b?
 # we'll need to wrap our input with the int() method so that the values passed into 
 # our function are evaluated as integers and not strings
 
-boolean = int(input("Value for boolean evaluation where i < this value? "))
-increment = int(input("Value to increment i by when i = i + this value? "))
-loop(boolean,increment)
+def loop2(a,b): 
+    i = 0
+    numbers = []
+
+    if (a <= 0) and (b <= 0):
+        print("Whoops, both of the numbers you entered wont work. Let's try this again...")
+        a = int(input("i < a, where a is == "))
+        b = int(input("i = i + b, where b is == "))
+
+    elif a <= 0:
+        print("Whoops, one of the numbers you entered wont work. Let's try this again...")
+        a = int(input("i < a, where a is == "))
+
+    elif b <= 0:
+        print("Whoops, one of the numbers you entered wont work. Let's try this again...")
+        b = int(input("i = i + b, where b is == "))
+
+    while i < a:
+        print(f"At the top i is {i}")
+        numbers.append(i) # remember what append does to a list?
+
+        i = i + b # this cannot be <= 0 otherwise it'll loop forever
+        print("The contents of the Numbers list are now: ", numbers)
+        print(f"At the bottom i is {i}\n")
+
+boolean = int(input("i < a, where a is == "))
+increment = int(input("i = i + b, where b is ==  "))
+
+loop2(boolean,increment)
+
+# for-loops vs. while-loops
+#   for-loops iterate (loop) "over" a collection of things
+#   while-loops are capable of any kind of iteration (looping) we desire
