@@ -1,0 +1,63 @@
+## introduction
+the dream is always the same
+the feeling of damp stone, cool against your warm cheek
+a darkness, so complete it its emptiness, that you lose yourself
+the fear is always present, surreal yet palabale all the same
+the dream is always the same
+except, you've never woken up within it before...
+
+you first notice the feeling against your cheek
+agains the palms of your hands
+you realize you're supine, sprawled against what must be a floor
+you reason with yourself that it surely must be better to stand
+then remain laying here, waiting for who knows what to happen
+at who knows when and for who knows why...
+you  drag yourself slowly to your feet in order to better examine your surroundings...
+
+this room is dimmly light, its lightsource is unknown
+you see what appears to be an object just inches from your feet
+to examine this item type `examine item`
+> examine item
+
+you've discoverd a dusty leather satchel!
+to take this item type `take satchel`
+> take satchel
+the satchel has been added
+
+you feel imbued with something, but are unable to determine what
+regardless, you open the satchel to see what's inside
+satisfied with your examination, you throw the satchel over one shoulder
+to learn more about this room type `examine room`
+> examine room
+the room comes into focus
+
+your eyes slowly adjust the lights
+squinting, you make out what appears to be an object mounted to the wall
+to learn more about this object, you must move closer to it
+to walk to the wall type `walk to wall`
+> walk to wall
+you arrive at the wall
+
+before your eyes is a fascinating painting of the Spanish Armada set ablaze in the English channel
+you're uncertain why you know this or how you know this but you but you do nevertheless
+you wonder if you are standing in what may be a Gallery
+to learn more type `examine painting`
+> examine painting
+
+the first thing notice is that the painting is mounted within an elaborately gilded frame
+everything about the painting and the frame appear old, but somehow you question this judgement
+the painting is oil on canvas
+a faint smell of turpentine and linseed oil is detected as you lean closer
+the brushstrokes are heavy and appear to emerge ever so slightly from the canvas itself
+the painting is illuminated by an unknown light source
+beneath the painting appears to be a brass plaque of sorts
+to learn more type `examine plaque`
+> examine plaque
+
+the plaque appears to be an ordinary plaque
+the engraving however has been lost to time
+as you bend to read you mistakingly place your hand over it
+the plaque is pushed into the wall ever so slightly
+you hear an audible click
+you hear the sound of rock on rock
+you feel as if the room is beginning to rotate

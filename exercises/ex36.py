@@ -23,3 +23,19 @@
 #      Code a little, run a little, fix a little.
 
 # Homework
+# Create a game similar to the one created in exercise 35. Take time over Thanksgiving 2019 break (Thurs – Sun) to make it as interesting as possible. For Study
+# Drills, use lists, functions and modules (see Exercise 13) as much as possible, and find as many new pieces of Python as possible to make the game work.
+#  
+# Before you start coding, you must draw a map for our game. You should create rooms, monsters, traps, etc ALL on paper before you code.
+# 
+# Once you have our map, try to code it up. If you encounter problems with the map, adjust it and make the code match.
+# 
+# The best way to work on a piece of software is in small chunks. Here are some tips:
+#   1. On a sheet of paper or an index card, write a list of tasks needed to complete the software. This is your to-do list.
+#   2. Pick the easiest thing from the list to work on.
+#   3. Write out English comments in your source file as a guide for how you want to accomplish this task in your code.
+#   4. Write some of the code under the English comments.
+#   5. Quickly run your script to see if the code works.
+#   6. Keep working in a cycle of writing some code, running it to test it, and fixing it until it works.
+#   7. Cross this tsak off your list, then pick up your next easiest task and repeat
+
