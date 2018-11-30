@@ -28,7 +28,7 @@ while len(stuff) != 10:
     print(f"There are {len(stuff)} items now.")
 
 print("There we go: ", stuff) # Here we call the Print method (function) with arguments "There we go: " and stuff. Could we alternatively write stuff.print("There we go: ")?
-stuff.print("There we go: ") # Is the output here the same as above?
+stuff.print("There we go: ") # Is the output here the same as above? This actually causes an AttributeError: 'list' object has no attribute 'print'. So no, we could not rewrite this in this manner.
 
 print("Let's do some things with stuff.")
 
