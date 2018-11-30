@@ -1,0 +1,24 @@
+this game is homework for exercise 36. 
+
+this game has 4 rooms and the map is roughly in the shape of a triangle with a cirle in the center. 
+each room contains an artifact. the object of the game is to collect all of the artifacts: 
+
+    1. adventurer's satchel (gallery)
+    2. flashlight
+    3. battery
+    4. key 
+
+the game starts in the circular chamber at the center of the map. this is the gallery. 
+a dusty leather satchel lays empty at the feet of the player
+the gallery has an elaborately gilded frame on the wall that appears to portray a rock wall. 
+the frame seems just large enough for the player to climb through.
+to the left of this frame is a lever. pulling the lever will rotate the gallery clockwise.
+each time the room rotates, the contents of the frame appear to change.
+
+the first room the gallery will rotate to face is room one.
+the second room the gallery will rotate to face is room two.
+the third room the gallery will rotate to face is room three.
+
+room one contains the flashlight.
+room two contains the battery.
+room three contains the key.
