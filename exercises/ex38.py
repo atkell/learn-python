@@ -16,24 +16,25 @@ print(ten_things)
 
 print("Wait there are not 10 things in that list. Let's address that.")
 
-stuff = ten_things.split(' ')
+stuff = ten_things.split(' ') # here we call Split method on ten_things. Alternatively, we could call Split with 2 arguments: ten_things and ' ': split(ten_things, ' ')
 print(stuff)
 more_stuff = ["Day", "Night", "Song", "Frisbee", 
               "Corn", "Banana", "Girl", "Boy"]
 
 while len(stuff) != 10:
-    next_one = more_stuff.pop()
+    next_one = more_stuff.pop() # Here we call Pop methdo on more_stuff. Alternatively, we could call Pop with argument more_stuff: pop(more_stuff)
     print("Adding: ", next_one)
-    stuff.append(next_one)
+    stuff.append(next_one) # Here we call Append method on stuff with the argument next_one. Alternatively, we could call Append with arguments stuff and next_one: append(stuff, next_one)
     print(f"There are {len(stuff)} items now.")
 
-print("There we go: ", stuff)
+print("There we go: ", stuff) # Here we call the Print method (function) with arguments "There we go: " and stuff. Could we alternatively write stuff.print("There we go: ")?
+stuff.print("There we go: ") # Is the output here the same as above?
 
 print("Let's do some things with stuff.")
 
 print(stuff[1])
-print(stuff[-1]) # fancy?
+print(stuff[-1]) # Fancy?
 print(stuff.pop())
 print(' '.join(stuff))
-print('\n'.join(stuff)) # very useful for printing out list contents for our basic inventory system
+print('\n'.join(stuff)) # Very useful for printing out list contents for our basic inventory system
 print('#'.join(stuff[3:5]))
