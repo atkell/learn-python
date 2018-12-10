@@ -80,8 +80,8 @@ cities['NY'] = "New York City"
 
 # print out some cities
 print(lines)
-print("GA State has: ", cities['GA'])
-print("LA State has: ", cities['LA'])
+print("GA State has city: ", cities['GA'])
+print("LA State has city: ", cities['LA'])
 
 # print out some states
 print(lines)
@@ -90,7 +90,7 @@ print("Mississippi's abbreviation is: ", states['Mississippi'])
 
 # print it again by using the state then cities dict
 print(lines)
-print("Georgia has: ", cities[states['Georgia']])
+print("Georgia has city: ", cities[states['Georgia']])
 
 # print out every state abbreviation!
 print(lines)
@@ -99,7 +99,7 @@ for state, abbrev in list(states.items()):
 
 # print every city in each state
 print(lines)
-for abbrev, city in list(states.items()):
+for abbrev, city in list(cities.items()):
     print(f"{abbrev} has the city {city}")
 
 # now let's try to do both at the very same time...
@@ -107,3 +107,15 @@ print(lines)
 for state, abbrev in list(states.items()):
     print(f"{state} state is abbreviated {abbrev}")
     print(f"and has city {cities[abbrev]}")
+
+print(lines)
+# safely get an abbreviation by state that might not be there
+whatState = input("What state would you like to find an abbreviation for?  ")
+state = states.get(whatState)
+
+if not state:
+    print(f"Sorry, no {whatState}")
+
+# get a city with a default value
+city = cities.get('TX', 'Does Not Exist')
+print(f"The city for the state 'TX' is: {city}")
