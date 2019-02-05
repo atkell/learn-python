@@ -1,5 +1,12 @@
 this game is homework for exercise 36. 
 
+the player may take a few actions, those actions are verbs:
+
+    1. take
+    2. walk
+    3. pull
+
+
 this game has 4 rooms and the map is roughly in the shape of a triangle with a cirle in the center. 
 each room contains an artifact. the object of the game is to collect all of the artifacts: 
 
